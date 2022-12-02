@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&family=Roboto:wght@100&display=swap');
+
+:root {
+  --hatter: azure;
+  --betuSzin: rgb(150, 0, 0);
+  --betuStilusIndexH1: Consolas;
+  --betuStilusMasikH2: Roboto;
+  --bodyStilus: Roboto;
+  --hataroloVonal: 1px solid black;
+  --liHatterSzin: rgb(2, 65, 184);
+  --liHatterSzinLebeg: dodgerBlue;
+}
+
+* {
+  /* border: 1px solid black; */
+}
+
+body {
+  background-color: var(--hatter);
+  font-family: var(--bodyStilus);
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  /* --hatter: lightBlue; */
+  background-color: inherit;
+  color: var(--betuSzin);
+  font-family: var(--betuStilusIndexH1);
+}
+
+h2 {
+  color: var(--betuSzin);
+  font-family: var(--betuStilusMasikH2);
+  text-align: center;
+}
+
+h6 {
+  color: var(--betuSzin);
+  font-family: var(--betuStilusMasikH2);
+}
+
+nav {
+  /* border: var(--hataroloVonal); */
+  list-style-type: none;
+  padding: 0px;
+}
+
+li {
+  /* border: var(--hataroloVonal); */
+  background-color: var(--liHatterSzin);
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+  width: 120px;
+}
+
+#viz-nav {
+  background-color: rgb(35, 36, 105);
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+}
+
+#viz-nav li {
+  float: left;
+  margin: 0px;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  width: 100%;
+}
+
+li:hover:not(.active) {
+  background-color: var(--liHatterSzinLebeg);
+}
+
+.active {
+  background-color: red;
+}
+
+.jobb {
+  width: 70%;
+  float: left;
+}
