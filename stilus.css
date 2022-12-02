@@ -11,22 +11,23 @@
   --liHatterSzinLebeg: dodgerBlue;
 }
 
-* {
-  /* border: 1px solid black; */
-}
-
 body {
   background-color: var(--hatter);
   font-family: var(--bodyStilus);
   margin: 0px;
   padding: 0px;
+  background-image: url(/kepek/karacsonykep.jpg);
+  background-repeat: no-repeat ;
+  background-position: top;
 }
 
 h1 {
-  /* --hatter: lightBlue; */
-  background-color: inherit;
   color: var(--betuSzin);
   font-family: var(--betuStilusIndexH1);
+  text-align: center;
+  width: 100%;
+  border-radius: 8px;
+  font-size: xx-large;
 }
 
 h2 {
@@ -41,23 +42,34 @@ h6 {
 }
 
 nav {
-  /* border: var(--hataroloVonal); */
   list-style-type: none;
   padding: 0px;
 }
 
-li {
-  /* border: var(--hataroloVonal); */
-  background-color: var(--liHatterSzin);
-  color: white;
-  font-weight: bold;
-  margin-bottom: 5px;
-  text-align: center;
-  width: 120px;
+nav li {
+  width: 25%;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
+nav li a {
+  background-color: var(--liHatterSzin);
+  color: white;
+  display: block;
+  font-weight: bold;
+  width: 100%;
+  line-height: 40px;
+  height: 45px;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav li a:hover {
+  background-color: var(--liHatterSzinLebeg);
+}
+
+
 #viz-nav {
-  background-color: rgb(35, 36, 105);
   margin: 0px;
   overflow: hidden;
   padding: 0px;
@@ -66,18 +78,6 @@ li {
 #viz-nav li {
   float: left;
   margin: 0px;
-}
-
-li a {
-  display: block;
-  color: white;
-  padding: 5px;
-  text-decoration: none;
-  width: 100%;
-}
-
-li:hover:not(.active) {
-  background-color: var(--liHatterSzinLebeg);
 }
 
 .active {
