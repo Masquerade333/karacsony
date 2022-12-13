@@ -14,7 +14,7 @@ Egy projekt a Karácsonyról
 - Felelős:Bucsányi Balázs
 - `index.html`, `stilus.css` programozása
 - [ ] Negyedik feladat
-- Felelős:
+- Felelős: Mindenki is
 - legalább három egyéb `html`
 - [ ] Plussz (nem kötelező) feladat
 - Felelős:
